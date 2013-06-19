@@ -15,6 +15,7 @@ void ll_print(linked_list* linked_list);
 void ll_prepend(linked_list* linked_list, int value);
 int ll_size(ll_node*);
 void insert_ll(ll_node* new_node, ll_node* prev_node);
+void remove_ll(ll_node* target_node, ll_node* prev_node);
 ll_node* nth_node(linked_list* ll, int position);
 /* ll_node* find_value(linked_list* ll, int value); */
 

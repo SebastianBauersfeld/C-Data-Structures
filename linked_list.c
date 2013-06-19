@@ -51,6 +51,11 @@ void insert_ll(ll_node* new_node, ll_node* prev_node){
   prev_node->next = new_node;
 };
 
+void remove_ll(ll_node* target_node, ll_node* prev_node){
+  prev_node->next = target_node->next;
+  // call free on target_node?
+};
+
 int main (int argc, char **args) {
   linked_list* ll = ll_create();
   ll_prepend(ll, 3);
@@ -59,6 +64,8 @@ int main (int argc, char **args) {
   ll_prepend(ll, 11);
   ll_print(ll);
   insert_ll(node_create(1, NULL), nth_node(ll, 1));
+  ll_print(ll);
+  remove_ll(nth_node(ll, 3), nth_node(ll, 2));
   ll_print(ll);
   return 0;
 }
