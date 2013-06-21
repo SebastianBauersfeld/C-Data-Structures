@@ -210,9 +210,10 @@ void bst_free(bst_tree* tree){
     free(tree);
 }
 
-
 /* a small test suite for the bst implementation */
-void test_suite(){
+void bst_test(){
+    printf("testing binary search trees...\n");
+
     /* empty tree */
     bst_tree* tree = bst_create();
     assert(!bst_contains(tree, 0));
@@ -288,10 +289,4 @@ void test_suite(){
 
     bst_assert(tree);
     bst_free(tree);
-}
-
-int main(int argc, char** args){
-    test_suite();
-    printf("\n===\nAll tests succeeded!\n");
-    return 0;
 }
