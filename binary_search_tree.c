@@ -273,7 +273,7 @@ void bst_test(){
 
 
     /* create degenerated tree */
-    const int NUM = 10000;
+    const int NUM = 90000;
     for(int i = 0; i < NUM; i++)
         bst_insert(tree, i);
 

@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 int main(int argc, char** args){
-    //bst_test();
+    bst_test();
     rbt_test();
     printf("\n===\nAll tests succeeded!\n");
     return 0;
