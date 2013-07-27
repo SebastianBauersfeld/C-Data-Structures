@@ -1,6 +1,6 @@
 /*
  * Implementation of singly linked integer lists with sentinel node
- * author: Sebastian Bauersfeld
+ * authors: Sebastian Bauersfeld, Javier Olaecha
  */
 
 #ifndef LLIST_H
